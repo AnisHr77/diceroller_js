@@ -16,3 +16,4 @@ decrementer.onclick = function () {
     count--;
     counter.textContent = count;
 }
+console.log("this is for github");
