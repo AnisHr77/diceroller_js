@@ -18,6 +18,10 @@ function rollDice(){
     textResult.textContent=` La resultat de roller : ${ruslts.join(",")}` ;
     images.innerHTML= rusltimg.join('') ;
 }
+for(let i=0 ; i<ruslts.length ; i++)
+    {
+        console.log(ruslts[i])
+    }
 console.log("this is for jota");
 
 
