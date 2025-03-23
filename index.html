@@ -2,20 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Counter</title>
+    <title>Title</title>
     <link rel="stylesheet" href="index.css">
-
 </head>
 <body>
+<div id="container">
+    <h1> Dice Roller </h1>
+    <label> Select Number of dices
+
+        <input id="numberOfDices" type="number" min=1 max="6" >
+
+    </label>
+                <button id="btn" onclick="rollDice()">Roll Dice</button>
+
+</div>
 
 
-    <h1 id="num">0</h1>
-<br> <br>
-    <div id="buttons">
-<button id ="decrementer">decrementer</button>
-<button id ="refrech">refrech</button>
-<button id ="incrementer">incrementer</button>
-    </div>
-    <script src="index.js"></script>
+<div id="text-result"></div>
+<div id="images-result">
+
+</div>
+
+
+
+
+
+<script src="index.js"></script>
 </body>
 </html>

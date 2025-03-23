@@ -1,19 +1,25 @@
-const increment = document.getElementById('incrementer');
-const decrementer = document.getElementById('decrementer');
-const refrech = document.getElementById('refrech');
-counter=document.getElementById('num');
-let count = 0 ;
+function rollDice(){
+    const numberOfDices = document.getElementById("numberOfDices").value;
+    const textResult = document.getElementById("text-result");
+    const images = document.getElementById("images-result");
 
-increment.onclick = function () {
-    count++;
-    counter.textContent = count;
+    const ruslts = [] ;
+    const rusltimg = [] ;
+
+
+    for (let i = 0; i < numberOfDices; i++)
+    {
+        const random = Math.floor(Math.random() * 6)+1;
+        ruslts.push(random) ;
+
+        rusltimg.push(`<img src ="../dice_images/${random}.png">`) ;
+
+    }
+    textResult.textContent=` La resultat de roller : ${ruslts.join(",")}` ;
+    images.innerHTML= rusltimg.join('') ;
 }
-refrech.onclick = function () {
-    count=0;
-    counter.textContent = count;
-}
-decrementer.onclick = function () {
-    count--;
-    counter.textContent = count;
-}
-console.log("this is for github");
+
+
+
+
+
